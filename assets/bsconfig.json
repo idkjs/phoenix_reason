@@ -1,14 +1,24 @@
 {
   "name": "phoenix_reason",
-  "sources": [
-    "src"
-  ],
+  "sources": {
+    "dir": "src"
+  },
+    "suffix": ".bs.js",
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+    "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3,
   "bs-dependencies": [
     "reason-react",
     "bucklescript-phx"
   ],
   "reason": {
-    "react-jsx": 2
+    "react-jsx": 3
   },
   "bsc-flags": [
     "-bs-no-version-header",
